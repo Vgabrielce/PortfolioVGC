@@ -1,0 +1,689 @@
+/* ==========================================
+   IMPORTATION DE LA POLICE PATRIOT
+========================================== */
+@font-face {
+    font-family: 'Patriot Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Patriot Bold'), url('Patriot-Bold.woff') format('woff');
+}
+
+
+
+/* ==========================================
+   VARIABLES DE COULEURS
+========================================== */
+:root {
+    --rouge: #773b3b;
+    --rouge-fort: #b1282a;
+    --rouge-fonce: #1e1010;
+    --bleu: #4A7BA7;
+    --bleu-profil: #5B8FC2;
+    --rouge-profil: #510303;
+    --rouge3: #7a0202;
+    --beige: #F7D8D8;
+    --jaune: #E8C547;
+    --blanc: #F5F5F5;
+    --gris: #2C2C2C;
+    --gris-fonce: #1a1a1a;
+    --rose-beige: #f7d8d8;
+    --card-bg: #3d3232;
+}
+
+
+
+/* ==========================================
+   RESET DE BASE
+========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    font-weight: 800;
+}
+
+/* ==========================================
+   NAVIGATION
+========================================== */
+nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--rose-beige);
+    padding: 15px 50px;
+    border-radius: 50px;
+    width: 60%;
+    z-index: 1000;
+    box-shadow: 0px 4px 12px rgb(247, 216, 216,0.7);
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+
+
+.nav-links {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content:center;
+    margin-right: 100px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    margin-left: 20px;
+}
+
+nav a {
+    color: var(--rouge-fonce);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+}
+
+nav a:hover {
+    color: var(--rouge);
+}
+
+/* ==========================================
+   SECTIONS GÉNÉRALES
+========================================== */
+.section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+/* ==========================================
+   SECTION ACCUEIL - STYLE MAQUETTE
+========================================== */
+
+.accueil-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    width: 100%;
+    gap: 60px;
+    padding: 0 60px;
+}
+
+.logo-section img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+
+/* Section informations */
+.info-section {
+    flex: 1;
+    text-align: left;
+}
+
+.portfolio-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Patriot Bold', Arial, sans-serif;
+    font-size: 120px;
+    color: white;
+    letter-spacing: 15px;
+    margin-bottom: 40px;
+    text-shadow: #510303 5px 5px 0px;
+}
+
+
+
+
+/* Indicateur de scroll */
+.scroll-indicator {
+    text-decoration:none!important;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    border-radius: 30px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+a.scroll-indicator:hover {
+    color: white;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    10% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+    40% {
+        transform: translateX(-50%) translateY(-5px);
+    }
+}
+
+a.scroll-indicator {
+    text-decoration: none;
+}
+
+/* ==========================================
+   SECTION REFUGE - 
+========================================== */
+
+.Refuge-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1400px;
+    width: 100%;
+    gap: 60px;
+    padding: 0 60px;
+}
+
+.Branding-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1400px;
+    width: 100%;
+    gap: 60px;
+    padding: 0 60px;
+}
+
+.Branding2-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1400px;
+    width: 100%;
+    gap: 60px;
+    padding: 0 60px;
+}
+
+
+.images-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    width: 600px;
+    gap: 20px;
+}
+
+.images {
+    height: auto;
+    width: 600px;
+    overflow: hidden;
+    border-radius: 60px;
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 30px;
+    border: 3px solid white;
+    aspect-ratio: 3/4;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.images img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.imagesbranding img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+.imagesbranding {
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    border-radius: 60px;
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 30px;
+    border: 3px solid white;
+}
+
+#section3 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagesbranding2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+.imagesbranding2 {
+    height: 350px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 60px;
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 30px;
+    border: 3px solid white;
+}
+
+.imagesb2container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* mockups */
+
+#section5 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.Mockup-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1400px;
+    width: 100%;
+    gap: 60px;
+    padding: 0 60px;
+}
+
+.imagesMockupcontainer {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,4fr);
+    gap: 20px;
+}
+
+
+
+
+.imagesMockup {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    width: 330px;
+    overflow: hidden;
+    border-radius: 60px;
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 30px;
+    border: 3px solid white;
+}
+
+.imagesMockup img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+#section7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.end-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1400px;
+    width: 100%;
+    gap: 60px;
+    padding: 0 60px;
+}
+
+.end-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 350px;
+    height: 100px;
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border: 4px solid white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.end-container a:hover {
+    background: white;
+    color: var(--rouge-profil);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ==========================================
+   TITRES
+========================================== */
+h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   COULEURS DE FOND
+========================================== */
+.bg-bleu {
+    background: var(--rouge-fonce);
+    color: white;
+}
+
+.bg-rouge {
+    background: var(--rouge);
+    color: white;
+}
+
+.bg-rouge-fort {
+    background: var(--rouge-fort);
+    color: white;
+}
+
+.bg-rouge2 {
+    background: var(--rouge-profil);
+    color: white;
+}
+
+.bg-rouge3 {
+    background: #7a0202;;
+    color: white;
+}
+
+.bg-rouge-fonce {
+    background: var(--rouge-fonce);
+    color: white;
+}
+
+.gradientC {
+    background: linear-gradient(to bottom, var(--rouge-fonce), var(--rouge-profil));
+    color: white;
+}
+
+.gradientL {
+    background: linear-gradient(to bottom, var(--rouge3), var(--rouge-profil));
+    color: white;
+}
+.gradientA {
+    background: linear-gradient(to bottom, var(--rouge-fonce),var(--rouge3));
+    color: white;
+}
+.gradientO {
+    background: linear-gradient(to bottom,var(--rouge-profil), var(--rouge-fonce));
+    color: white;
+}
+
+.gradientX {
+    background: linear-gradient(to bottom,var(--rouge-profil), var(--rouge3));
+    color: white;
+}
+.gradientZ {
+    background: linear-gradient(to bottom,var(--rouge3), var(--rouge-fonce));
+    color: white;
+}
+
+
+/* ==========================================
+   Bouton NEXT
+========================================== */
+
+.next-button {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    padding: 20px 60px;
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border: 4px solid white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.next-button:hover {
+    background: white;
+    color: var(--rouge-profil);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* ==========================================
+   CAROUSEL DE PROJETS
+========================================== */
+
+#section3 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1200px;
+}
+
+#section3 h2 {
+    font-size: 60px;
+    letter-spacing: 5px;
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+.carousel-container {
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+}
+
+.carousel-wrapper {
+    overflow: hidden;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 40px;
+}
+
+.carousel-slide.active {
+    display: flex;
+}
+
+/* Image du projet */
+.projet-image {
+    max-width: 90%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 3px solid white;
+}
+
+.projet-image img {
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.projet-image:hover img {
+    transform: scale(0.90);
+}
+
+.projet-btn {
+    display: inline-block;
+    padding: 15px 35px;
+    background: white;
+    color: var(--rouge);
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+    border: 3px solid white;
+}
+
+.projet-btn:hover {
+    background: transparent;
+    color: white;
+    transform: translateX(5px);
+}
+
+/* Boutons de navigation */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    border: 3px solid white;
+    font-size: 24px;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    background: white;
+    color: var(--rouge);
+}
+
+.carousel-btn.prev {
+    left: -60px;
+}
+
+.carousel-btn.next {
+    right: -60px;
+}
+
+/* Indicateurs */
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.indicator {
+    width: 15px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid white;
+}
+
+.indicator:hover,
+.indicator.active {
+    background: white;
+    transform: scale(1.2);
+}
