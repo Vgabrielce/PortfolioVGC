@@ -171,21 +171,20 @@ nav a:hover {
     flex: 1;
     text-align: left;
 }
+
 .portfolio-title {
     z-index: 1;
-    position: relative;
+    position: absolute;
     font-family: 'Patriot Bold', Arial, sans-serif;
     font-size: 120px;
     color: var(--beige);
     letter-spacing: 11px;
-    margin-bottom: 40px;
-    top: 20px;
+    margin-bottom: 40px; 
 }
 .portfolio-title2 {
     z-index: 2;
-    transform: translateX(6px);
-    position: absolute;
-    top: 140px;
+    transform: translateX(6px) translateY(-6px);
+    position: relative;
     font-family: 'Patriot Bold', Arial, sans-serif;
     font-size: 120px;
     color: transparent;
@@ -193,6 +192,7 @@ nav a:hover {
     margin-bottom: 40px;
     -webkit-text-stroke: 3px #510303;
 }
+
 .info-card {
     font-family: 'league spartan', Arial, sans-serif;
     background: var(--card-bg);
