@@ -171,17 +171,28 @@ nav a:hover {
     flex: 1;
     text-align: left;
 }
-
 .portfolio-title {
+    z-index: 1;
+    position: relative;
     font-family: 'Patriot Bold', Arial, sans-serif;
     font-size: 120px;
-    color: var(--rose-beige);
+    color: var(--beige);
     letter-spacing: 11px;
     margin-bottom: 40px;
-    text-shadow: #510303 5px 5px 0px;
+    top: 20px;
 }
-
-
+.portfolio-title2 {
+    z-index: 2;
+    transform: translateX(6px);
+    position: absolute;
+    top: 140px;
+    font-family: 'Patriot Bold', Arial, sans-serif;
+    font-size: 120px;
+    color: transparent;
+    letter-spacing: 11px;
+    margin-bottom: 40px;
+    -webkit-text-stroke: 3px #510303;
+}
 .info-card {
     font-family: 'league spartan', Arial, sans-serif;
     background: var(--card-bg);
