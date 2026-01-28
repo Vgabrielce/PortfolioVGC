@@ -14,7 +14,7 @@
 
     <!-- NAVIGATION -->
     <nav>
-        <a href="#section1"><img src="Elements/Logo.png" alt="Logo" class="nav-logo"></a>
+        <a href="#section1" aria-label="Retour à l\'accueil"><img src="Elements/Logo.png" alt="Logo" class="nav-logo"></a>
         <div class="nav-links">
             <a href="#section2">Compétences</a>
             <a href="#section3">Projets</a>
@@ -35,7 +35,7 @@
             <!-- Partie droite : Titre et informations -->
             <div class="info-section">
                 <h1 class="portfolio-title">PORTFOLIO</h1>
-                <h1 class="portfolio-title2">PORTFOLIO</h1>
+                <h2 class="portfolio-title2">PORTFOLIO</h2>
 
                 <div class="info-card">
                     <h2>Je suis Vincent-Gabriel Ceccaldi</h2>
@@ -132,7 +132,7 @@
                         <div class="langue-item">
                             <span class="langue-flag">🇬🇧</span>
                             <span class="langue-name">Anglais</span>
-                            <span class="langue-level">Fluent</span>
+                            <span class="langue-level">Bilingue</span>
                         </div>
                     </div>
                 </div>
@@ -233,7 +233,7 @@
     <section id="section4" class="section gradientO">
         <div class="container">
             <h2><img src="Elements/LogoOrphée2.png" alt="">ORPHÉE CORPORATION</h2>
-            <a href="orphee_page.html"><p>DECOUVRIR</p></a>
+            <a href="orphee_page_fixed.html"><p>DECOUVRIR</p></a>
             
         </div>
 
@@ -279,7 +279,7 @@
     </section>
 
     <!-- SECTION 6 : CUSTOMISATION DE GUITARE -->
-    <section id="section6" class="section bg-rouge-fort">
+    <section id="section6" class="section gradientA">
         <div class="container">
             <h2>CUSTOMISATION DE GUITARE</h2>
 
@@ -369,13 +369,28 @@
 
     <!-- SECTION 8 : CONTACT -->
     <section id="section8" class="section bg-rouge2">
-        <div class="container">
-            <h2>CONTACT</h2>
+        <h2>CONTACT</h2>
+        <div class="container_contact">
+            
             <div class="contact-info">
                 <p class="icon gmail"><img src="Elements/icons8-gmail-100.png" alt=""><a href="mailto:ceccaldi.vincentgabriel@gmail.com">ceccaldi.vincentgabriel@gmail.com</a></p>
                         <p class="icon instagram"><img src="Elements/icons8-instagram-100.png" alt=""><a href="https://www.instagram.com/vgabriel_ce/">vgabriel_ce</a></p>
                         <p class="icon pinterest"><img src="Elements/icons8-pinterest-100.png" alt=""><a href="https://fr.pinterest.com/vgabrielce/">Vgabrielce</a></p>
                 <p>📞 0612345678</p>
+            </div>
+            <div class="contact-info">
+                <form action="">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="2" required></textarea>
+
+                    <button type="submit">Envoyer</button>
+                </form>
             </div>
         </div>
     </section>
